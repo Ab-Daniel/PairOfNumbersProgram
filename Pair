@@ -1,0 +1,76 @@
+
+public class Pair 
+{
+	
+		public Pair () //default constructor for the pair of integers
+		{
+			
+			num01 = 10;
+			
+			num02 = 10;
+			
+		}
+	
+	   public Pair (int aFirst, int aSecond) 
+	   {
+		   num01 = aFirst;
+				   
+		   num02 = aSecond;	   
+		   
+		   
+	   }	// constructor to accept two ints
+
+	   public int getSum( ) 
+	   {
+		   
+		return num01 + num02;   
+		   
+	   }	// return the sum of the two ints
+	   
+	   public int getDifference() //return the difference of the two integers
+	   {
+		   
+		   return num01 - num02;
+		   
+	   }
+	   
+	   public int getProduct() //return num01 * num02
+	   {
+		   
+		   return num01 * num02;
+		   
+	   }
+	   
+	   public double getAverage () //return average of the sum of num01 and num02
+	   {
+		   
+		   return (num01 + num02)/2.0;
+		   
+	   }
+	   
+	   public int getDistance () //return the absolute value of the two integers
+	   {
+		   
+		   return Math.abs(num01 - num02);
+		   
+	   }
+	   
+	   public int getMaximum () //return Maximum integer
+	   {
+		   
+		   return Math.max(num02, num01);
+		   
+	   }
+	   
+	   public int getMinimum () //return minimum integer
+	   {
+		   
+		   return Math.min(num01, num02);
+		   
+	   }
+	
+	int num01;
+	
+	int num02;
+	
+}
