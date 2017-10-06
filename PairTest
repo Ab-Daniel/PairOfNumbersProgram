@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+
+public class PairTest 
+{
+
+	public static void main(String[] args) 
+	{
+		//Pair pairOfInts = new Pair ();
+		
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Enter an integer")); //user input for the first integer
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Enter another integer")); //user input for the second integer
+		Pair daniel = new Pair(num1, num2); //Object to make the pair of ints
+		System.out.println("First integer: " + num1);
+		System.out.println("Second integer: " + num2);
+		System.out.println("Sum of the two integers: " + daniel.getSum()); //
+		System.out.println("Difference of the two integers: " + daniel.getDifference());
+		System.out.println("Product of two integers: " + daniel.getProduct());
+		System.out.println("Average of the two integers: " + daniel.getAverage());
+		System.out.println("Distance of the two integers: " + daniel.getDistance());
+		System.out.println("Maximum integer: " + daniel.getMaximum());
+		System.out.println("Minimum integer: " + daniel.getMinimum());
+		
+		
+	}
+}
